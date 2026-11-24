@@ -32,6 +32,10 @@ Kolahal 0.5.15 or newer can add a source.
 - In Kolahal, Get more scripts shows the new version as an update. It keeps the list for an hour;
   the refresh button at the top reads it again at once.
 
+Shaders (Kolahal 0.5.17 or newer) go in `shaders/<name>/<name>.agsl`, with a full
+[header](https://mtwabpin.github.io/kolahal/scripting/shaders/#the-header), and are checked and published
+the same way.
+
 `scripts/hello` and `scripts/hello-js` are examples, so there is something to publish at first.
 Delete them when you have scripts of your own.
 
