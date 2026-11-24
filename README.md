@@ -1,7 +1,7 @@
 # Your Kolahal scripts
 
 A repository of your own scripts for [Kolahal](https://github.com/mtwabpin/kolahal), the
-keyboard-first terminal launcher for Android. Kolahal lists them in **Scripts → Get more scripts**,
+touch and type optimized launcher for Android. Kolahal lists them in **Scripts → Get more scripts**,
 beside [kolahal-scripts](https://github.com/mtwabpin/kolahal-scripts), and installs them from here.
 You add and update scripts when you like: nobody else has to review or merge them.
 
