@@ -40,6 +40,13 @@ and the [API](https://mtwabpin.github.io/kolahal/scripting/api/). The `template-
 [kolahal-scripts](https://github.com/mtwabpin/kolahal-scripts/tree/main/scripts) are commented
 starting points: a command, a timer, an event on the phone, an API key, a fetch, log lines and widgets.
 
+## A branch for a Kolahal version
+
+Nothing changes while you use `main` alone. A branch named after a Kolahal version, such as
+`0.5.17`, is published for that version too, as `…/0.5.17/index.json`: Kolahal 0.5.17 or newer reads
+the list of its own version first, and `main`'s when there is none. A script that needs a Kolahal
+that isn't released yet can wait there, checked by that branch's own `tools/check.mjs`.
+
 ## How Kolahal uses it
 
 - Kolahal reads `index.json`, which lists every script with its SHA-256 checksum, and installs a
@@ -51,6 +58,7 @@ starting points: a command, a timer, an event on the phone, an API key, a fetch,
 
 ## Keeping the checker current
 
-`tools/check.mjs` and `.github/workflows/scripts.yml` are copies of kolahal-scripts' own. When a new
-Kolahal adds a directive or an access item, take the newer `tools/check.mjs` from
-[kolahal-scripts](https://github.com/mtwabpin/kolahal-scripts/blob/main/tools/check.mjs).
+`tools/check.mjs`, `tools/site.mjs` and `.github/workflows/scripts.yml` are copies of kolahal-scripts'
+own. When a new Kolahal adds a directive or an access item, take the newer `tools/check.mjs` from
+[kolahal-scripts](https://github.com/mtwabpin/kolahal-scripts): from `main` for the Kolahal that is
+released, or from the branch of the version it is for, such as `0.5.17`.
